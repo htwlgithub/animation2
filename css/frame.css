@@ -9,11 +9,12 @@ body{
     position: relative;
     animation-name: anim;
     animation-duration: 4s;
+    animation-iteration-count: 2;
 }
 
 @keyframes anim {
-    0% {background-color: #ffffff; }
-    25% {background-color: red;}
-    50% {background-color: green;}
-    100% {background-color: #ffffff;}
+    0% {background-color: #ffffff; left:0px; top:0px; border-radius: 0 0 0 0}
+    33% {background-color: red; left: 300px; top:0px; border-radius: 25% 25% 0 0}
+    66% {background-color: green; left: 300px; top:300px; border-radius: 25% 25% 25% 25%}
+    100% {background-color: #ffffff;left:0px; top:0px;border-radius: 0 0 0 0}
 }
