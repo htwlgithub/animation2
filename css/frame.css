@@ -1,0 +1,19 @@
+body{
+    background: #333;
+}
+
+.box{
+    background: #ffffff;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: anim;
+    animation-duration: 4s;
+}
+
+@keyframes anim {
+    0% {background-color: #ffffff; }
+    25% {background-color: red;}
+    50% {background-color: green;}
+    100% {background-color: #ffffff;}
+}
